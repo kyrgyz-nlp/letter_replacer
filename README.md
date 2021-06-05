@@ -19,12 +19,12 @@
 4. [Ү vs У classification model](https://github.com/kyrgyz-nlp/letter_replacer/releases/download/v0.1-alpha/u_and_u_umlaut_dataset.bin)
 
 
-## To run you instance of a bot, you should do the following:
+## To run your instance of a bot, you should do the following:
 1. Create `.env` file (just rename the template file `env_template` to `.env`)
 2. Go to Telegram's Botfather and register a new bot
-3. Write its credentials (BOT_TOKEN and BOT_USERNAME) there
-4. Activate you virtual env and run `python manage.py tgbotwebhook`. After that you will see a prompt `Enter bot username:`. Write there your bot's username and as the next step you'll have to choose one of the two options. Select 1 and set your hostname (example: https://yourawesomesite.com).
-5. Find your bot and send some sentences, for example: `комур жакканда зыян тутун чыгат`. The bot will respond with `көмүр жакканда зыян түтүн чыгат`.
+3. Write its credentials (BOT_TOKEN and BOT_USERNAME) to your `.env` file
+4. Activate your virtual env and run `python manage.py tgbotwebhook`. After that you will see a prompt `Enter bot username:`. Write there your bot's username and as the next step you'll have to choose one of the two options. Select 1 and set your hostname (example: https://yourawesomesite.com).
+5. Send some sentences to your bot. For example: `комур жакканда зыян тутун чыгат`. The bot will respond with `көмүр жакканда зыян түтүн чыгат`.
 
 
 ## Running locally
