@@ -1,0 +1,5 @@
+SECRET_KEY=some_secret_do_not_write_quote_marks
+ALLOWED_HOSTS=your_host_or_just_*
+DEBUG=True
+BOT_TOKEN=token_given_by_telegram_bot_father
+BOT_USERNAME=your_bots_username
