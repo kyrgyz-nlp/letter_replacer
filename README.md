@@ -1,4 +1,4 @@
-# ӨҮҢизатор -- Telegram bot that replaces misuse of letters О, У, and Н with Ө, Ү, or Ң.
+# ӨҮҢизатор -- Telegram bot that replaces incorrectly used 'О', 'У', and 'Н' with 'Ө', 'Ү', or 'Ң'.
 
 
 ### Note: the bot is just a proof of concept. If you are interested in enhancing it, I'll be happy to help to collaborate!
