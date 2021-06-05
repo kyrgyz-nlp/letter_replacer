@@ -325,11 +325,17 @@ def correct_sentence(sent):
         word = word.lower()
         corr_words = get_correction_candidates(word)
         correction_candidates[ind] = corr_words
+    is_single_word = len(correction_candidates.keys()) == 1
     for ind, cands in enumerate(correction_candidates.values()):
         if len(cands) > 1:
             vector_sums = []
             candidates_combinations_d = {}
             for c in cands:
+                if is_single_word:
+                    vector_sum = get_sentence_vector_sum(c)
+                    candidates_combinations_d[vector_sum] = c
+                    vector_sums.append(vector_sum)
+                    continue
                 next_word_candidates = correction_candidates.get(ind+1)
                 ordering_format = '{0} {1}'
                 if ind + 1 == len(correction_candidates.values()):
